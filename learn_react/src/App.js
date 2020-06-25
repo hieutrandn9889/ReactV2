@@ -57,14 +57,24 @@ class App extends Component {
     return (
       <div>
         <Header />
+
         <div className="row">
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <Product />
+            <Product 
+              image="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+              name ="iphone X"
+              price = "1000"
+            />
           </div>
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <Product />
+            <Product 
+              image="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+              name ="iphone 10"
+              price = "100000"
+            />
           </div>
         </div>
+
         <div className="ml-30">
           <h3>
             a: {a}
@@ -76,10 +86,13 @@ class App extends Component {
             Status: {product.status ? "Active" : "Pending"}
           </h3>
         </div>
+
         <div className="ml-30">
           {this.showInforProduct(product)}
         </div>
+
         {element1}
+
         {element2}
       </div>
     )
