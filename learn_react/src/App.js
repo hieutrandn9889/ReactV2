@@ -16,11 +16,11 @@ class App extends Component {
       </h3>
     }
   }
-  showInforUser(user, index){
+  showInforUser(user, index) {
     return <div key={index}>
-              <h2>Ten: {user.name} </h2>
-              <h2>Tuoi: {user.age}</h2>
-           </div>
+      <h2>Ten: {user.name} </h2>
+      <h2>Tuoi: {user.age}</h2>
+    </div>
   }
 
   render() {
@@ -44,14 +44,14 @@ class App extends Component {
       }
     ];
     var element1 = users.map((user, index) => {
-      return  this.showInforUser(user, index)
+      return this.showInforUser(user, index)
     });
 
     var element2 = users.map((user) => {
-      return   <div key={user.id}>
-                  <h1>Ten: {user.name} </h1>
-                  <h1>Tuoi: {user.age}</h1>
-              </div>
+      return <div key={user.id}>
+        <h1>Ten: {user.name} </h1>
+        <h1>Tuoi: {user.age}</h1>
+      </div>
     });
 
     return (
@@ -60,18 +60,27 @@ class App extends Component {
 
         <div className="row">
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <Product 
+            <Product
               image="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
-              name ="iphone X"
-              price = "1000"
+              name="iphone X"
+              price="1000"
             />
           </div>
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <Product 
+            <Product
               image="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
-              name ="iphone 10"
-              price = "100000"
+              name="iphone 10"
+              price="100000"
             />
+          </div>
+
+          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <Product
+              image="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+              price="1000"
+            >
+              iphone X
+              </Product>
           </div>
         </div>
 

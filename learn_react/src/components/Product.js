@@ -8,6 +8,7 @@ class Product extends Component {
                     <div className="thumbnail">
                         <img alt={this.props.name} src={this.props.image} />
                         <div className="caption">
+                            <h3>{this.props.children}</h3>
                             <h3>{this.props.name}</h3>
                             <p>
                                 {this.props.price} VND
