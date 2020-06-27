@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class Product extends Component {
-    constructor(props){
-        super(props);
-        this.onCancelTocard = this.onCancelTocard.bind(this);
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.onCancelTocard = this.onCancelTocard.bind(this);
+    // }
 
     // onCancelTocard
     onCancelTocard = () => {
