@@ -4,7 +4,9 @@ class Result extends Component {
 
     setStyle = () => {
         return{
-            color: this.props.color
+            color: this.props.color,
+            borderColor: this.props.color,
+            fontSize: this.props.fontSize
         }
     }
 
@@ -12,7 +14,7 @@ class Result extends Component {
         return(
             <div>
                 <p>
-                Color: Red - Fontsize: 15px
+                Color: {this.props.color} - Fontsize: {this.props.fontSize} px
                 </p>
                 <div id="content" style={this.setStyle()}>
                 Nội Dung Setting
