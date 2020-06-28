@@ -2,6 +2,7 @@
 1. Truyen cha sang con
 
 App.js:
+
  constructor(props){
     super(props);
     this.state = {
@@ -17,6 +18,7 @@ render(){
   />)}
 
 Result.js:
+
 render(){
         return(
             <div>
@@ -29,6 +31,7 @@ render(){
 2. Truyen con sang cha
 
 Reset.js:
+
 onResetDefault = () => { 
         this.props.onSettingDefault(true)
     }
@@ -38,7 +41,9 @@ render(){
         <button type="button" className="btn btn-primary" onClick= {this.onResetDefault}>Reset</button>
     );
 }
+
 App.js:
+
 constructor(props){
     super(props);
     this.state = {
@@ -66,6 +71,7 @@ render(){
 3. Show list state va hung tu cha truyen con
 
 ColorPicker.js
+
 constructor(props){
     super(props)
     this.state ={
@@ -82,7 +88,9 @@ render(){
                     >
                     </span>
         });
+        
 App.js:
+
  constructor(props){
     super(props);
     this.state = {
