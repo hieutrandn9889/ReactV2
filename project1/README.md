@@ -1,5 +1,6 @@
 ### Review:
 1. Truyen cha sang con
+
 App.js:
  constructor(props){
     super(props);
@@ -26,6 +27,7 @@ render(){
         );}
 
 2. Truyen con sang cha
+
 Reset.js:
 onResetDefault = () => { 
         this.props.onSettingDefault(true)
@@ -60,7 +62,9 @@ render(){
                 </p>
             </div>
         );}
+        
 3. Show list state va hung tu cha truyen con
+
 ColorPicker.js
 constructor(props){
     super(props)
