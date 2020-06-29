@@ -103,7 +103,3 @@ render(){
     color={ this.state.color } 
     onReceiveColor={this.onSetColor} 
   />
-
-
-
-  abc
