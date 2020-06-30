@@ -19,7 +19,6 @@ render(){
   />)}
 
 Result.js:
-
 render(){
         return(
             <div>
@@ -68,6 +67,7 @@ render(){
                 </p>
             </div>
         );}
+
 3. Show list state va hung tu cha truyen con
 
 ColorPicker.js
@@ -88,6 +88,7 @@ render(){
                     >
                     </span>
         });
+
 App.js:
 
  constructor(props){
@@ -103,3 +104,7 @@ render(){
     color={ this.state.color } 
     onReceiveColor={this.onSetColor} 
   />
+
+
+
+  abc

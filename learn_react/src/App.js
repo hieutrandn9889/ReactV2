@@ -179,6 +179,27 @@ class App extends Component {
       <div>
           <Header />
 
+          {/* form */}
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div className="container mt-30">
+                <div className="panel panel-primary">
+                  <div className="panel-heading">
+                    <h3 className="panel-title">FORM</h3>
+                  </div>
+                  <div className="panel-body">
+                  <form>
+                    <div className="form-group">
+                      <label>Username:</label>
+                      <input type="text" className="form-control"/>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Lưu lại</button>&nbsp;
+                    <button type="reset" className="btn btn-primary">Xoá Trắng</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
           {/* Them san pham */}
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="panel panel-default">
